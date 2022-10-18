@@ -12,7 +12,7 @@ function picnicBudget(person){
         return hundredPersonPrice * person;
     }
 }
-console.log(picnicBudget(2));
+console.log(picnicBudget(6));
 
 
 
