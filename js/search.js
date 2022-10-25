@@ -11,12 +11,18 @@ const products = [
 ];
 
 function searchProduct(products,searchproduct){
+
+    const result =[];
     for(const product of products){
-        console.log(product);
+        if(product.name.includes(searchproduct)){
+            result.push(product)
+        }
+      
     }
+    return result;
 }
-  searchProduct(products);
- //console.log()
+  const matchresult=searchProduct(products,'watch');
+ console.log(matchresult)
 
 
 
